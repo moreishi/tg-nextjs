@@ -7,7 +7,7 @@ export default function Provider({children}) {
   // 2. Wrap NextUIProvider at the root of your app
   return (
     <NextUIProvider>
-      {children}
+      <main className="light text-foreground bg-background">{children}</main>
     </NextUIProvider>
   );
 }
